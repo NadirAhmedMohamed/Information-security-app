@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Information Security</title>
+</head>
+<body>
+      <!-- HEADER -->
+   <header> 
+   <a href="index.html" >ALzaiem ALazhri Universty</a>  
+      <button class="burger-icon">
+         <span></span>
+         <span></span>
+         <span></span>
+     </button>     
+   </header>
+ <!-- HEADER -->
+
+  <!-- HEROSECTION -->
+  <div class="hero-section">  
+       <div class="box"> 
+          <div>AAU Faculty of (IT & CS)</div>
+          <div>Nadir Ahmed / it 29</div>
+          <div>Jaafer Alsadeq / it 28</div>
+          <div>Mohsin Salah / is 29</div>
+   </div>   
+  </div>
+ <!-- HEROSECTION -->
+
+ <!-- DIVIDER -->
+  <div
+  class="divider">
+ 
+  </div> 
+<!-- DIVIDER -->
+
+<!-- MAIN MENU -->
+<div class="main-container">
+     <div class="headline">Main Menu</div>
+          
+        <button class="option Ceaser">1. Ceaser Cipher</button>
+        <button class="option special-class">2. Monoalphabetic Cipher</button>   
+        <button class="option playfair-btn">3. Playfair Cipher</button>
+        <button class="option DES-opt">4. DES Cipher</button>
+        <button class="option Triple-DES">5. Triple DES Cipher</button>
+
+  </div>
+<!-- MAIN MENU -->
+
+<!-- Ceaser Interface -->
+<div class="Ceaser-interface">
+
+  <div class="ceaser-result-wrapper">Result : <span class="ceaser-result"></span></div>
+
+<div class="input-enbtn">
+<input class="input-ceaser-en" placeholder="Enter Plaintext"/>
+<input type="number" class="ceaser-shift-input-en" placeholder="enter shift">
+<button class="send en-ceaser">Encrypt</button>
+</div>
+
+<button class="switch-to-de-in-ceaseer send Decrypto">switch to Decryption</button>
+
+<div class="input-debtn">
+<input class="input-ceaser-de" placeholder="Enter Ciphertext"/>
+<input type="number" class="ceaser-shift-input-de" placeholder="enter shift">
+<button class="send de-ceaser Decrypto">Decrypt</button>
+</div>
+
+<button class="switch-to-en-in-ceaseer send">switch to Encryption</button>
+<a class="return" href="index.html">Return to Main Menu</a>
+</div>
+<!-- Ceaser Interface -->
+
+<!-- Monoalphabetic  Interface -->
+
+<div class="mono-ui">
+  
+  <div class="mono-result">Result : <span class="result-of-mono"></span></div>
+  <div class="note">* The key must be 26 letters without any ruplicated letters </div>
+<div class="encryption-mode">
+  <input class="en-input-mono" type="text" placeholder="Enter Plaintext">
+  <input type="text" class="mono-key-input-en" min="26" maxlength="26" placeholder="enter key">
+  <button class="encryption-mono send">Encrypt</button>
+</div>
+
+<button class="swt-de-btn send Decrypto">Switch to Decrypton</button>
+
+<div class="decryption-mode">
+  <input class="de-input-mono" type="text" placeholder="Enter Ciphertext">
+  <input type="text" class="mono-key-input-de" placeholder="enter key">
+  <button class="decryption-mono Decrypto send">Decrypt</button>
+</div>
+
+<button class="swt-en-btn send">Switch to Encrypt</button>
+
+<a class="return" href="index.html">Return to Main Menu</a>
+
+</div>
+
+<!-- Monoalphabetic Interface -->
+
+<!-- Playfair Interface -->
+
+<div class="Playfair">
+
+  <div class="playfair-result">Ciphertext : <span class="playfair-result-area"></span></div>
+
+<div class="Playfair-Enmode">
+<input class="Playfair-input-en" placeholder="Enter Plaintext"/>
+<input class="Playfair-key-input-en" placeholder="Enter Key"/>
+<button class="send Playfair-EnBtn">Encrypt</button>
+</div>
+
+<button class="switc-to-de-in-playfair send Decrypto">switch to Decryption</button>
+
+<div class="Playfair-Demode">
+<input class="playfair-input-de" placeholder="Enter Ciphertext"/>
+<input class="Playfair-key-input-de" placeholder="Enter Key"/>
+<button class="send playfair-DeBtn Decrypto">Decrypt</button>
+</div>
+
+<button class="switc-to-en-in-playfair send">switch to Encryption</button>
+
+<a class="return" href="index.html">Return to Main Menu</a>
+
+</div>
+
+<!-- Playfair Interface -->
+
+
+<!-- DES Interface -->
+
+<div class="DES">
+
+  <div class="DES-result">Result : <span class="DES-result-area"></span></div>
+
+<div class="DES-Encrypt-mode">
+<input class="DES-input-en" placeholder="Enter Plaintext"/>
+<input class="DES-key-input-en" placeholder="Enter key"/>
+<button class="send DES-EnBtn">Encrypt</button>
+</div>
+
+<button class="DES-switch-de-btn send Decrypto">switch to Decryption</button>
+
+<div class="DES-Decrypt-mode">
+<input class="DES-input-de" placeholder="Enter Ciphertext"/>
+<input class="DES-key-input-de" placeholder="Enter key"/>
+<button class="send DES-DeBtn Decrypto">Decrypt</button>
+</div>
+
+<button class="DES-switch-en-btn send">switch to Encryption</button>
+
+<a class="return" href="index.html">Return to Main Menu</a>
+
+</div>
+
+<!-- DES Interface -->
+
+<!-- tripleDES Interface -->
+
+<div class="triple-DES">
+
+  <div class="triple-DES-result">Result : <span class="triple-DES-result-area"></span></div>
+
+<div class="triple-DES-Encrypt-mode">
+<input class="trpile-DES-input-en" placeholder="Enter Plaintext"/>
+<input class="triple-DES-key-input-en" placeholder="Enter password"/>
+<button class="send triple-DES-EnBtn">Encrypt</button>
+</div>
+
+<button class="triple-DES-switch-de-btn send Decrypto">switch to Decryption</button>
+
+<div class="triple-DES-Decrypt-mode">
+<input class="triple-DES-input-de" placeholder="Enter Ciphertext"/>
+<input class="triple-DES-key-input-de" placeholder="Enter password"/>
+<button class="send triple-DES-DeBtn Decrypto">Decrypt</button>
+</div>
+
+<button class="triple-DES-switch-en-btn send">switch to Encryption</button>
+
+<a class="return" href="index.html">Return to Main Menu</a>
+
+</div>
+
+<!-- tripleDES Interface -->
+
+<footer>
+<div class="copyright">
+  <div class="copy">&copy; All Rights Reserved</div> 
+  <div class="author">Nadir Ahmed / IT29</div>
+  <div class="author">Mohsen Salah / IS29</div>
+  <div class="author">Jaafer Alsadiq / IT29</div>
+</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

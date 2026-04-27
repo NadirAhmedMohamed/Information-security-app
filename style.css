@@ -1,0 +1,534 @@
+body {
+   margin : 0;
+   box-sizing: border-box;
+   direction : ltr;
+   background: white; 
+}
+
+/*start Global*/
+.headline {
+   font-weight: bold;
+   direction : ltr;
+   margin-bottom: 11px;
+   font-size: 28px;
+}
+
+/*<====Headline Responsive Design=====>*/
+@media (max-width: 768px){
+
+   .headline {
+font-size: 21px;
+}
+
+}
+/*<====Headline Responsive Design=====>*/
+
+.option {  
+   direction: ltr; 
+   background: #F6F6F6;
+   color : color;
+   border-radius: 10px;
+   padding: 10px;
+   font-weight: bold ;
+   margin: 0 auto 8px;
+   font-size: 17px;
+   border: 1px solid #aaa9a9;
+   width: 60%;
+   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+.option {
+   padding: 8px;
+   font-size: 14px;
+}
+
+}
+
+
+input {
+   background: white ;
+   width: 70%;
+   border-radius: 8px;
+   margin: 10px auto;
+   padding: 10px 0;
+   border: 1px solid #585860;
+   text-align: center;
+   font-weight: bold;
+   color: #585860; 
+   font-size: 18px;
+}
+
+input:focus{
+   border: 2px solid #585860;
+   outline: none;
+}
+
+input::placeholder {
+   color: #585860; 
+   font-size: 14px;
+}
+
+/*<=====input Responsive Design=====>*/
+@media (max-width: 768px) {
+ input {
+   padding: 8px 0;
+   font-size: 15px;
+}
+
+ input::placeholder {
+   font-size: 13px;
+}
+
+}
+/*<=====input Responsive Design=====>*/
+
+button.send {
+   border: 1px solid #DDDDDD;
+   border-radius: 8px;
+   background: #0D5EA6;
+   color : white;
+   font-weight: bold ;
+   width: 85px;
+   font-size: 15px;
+   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+   padding: 10px;
+   display: block;
+   cursor: pointer;
+   margin: 10px;
+}
+
+button.Decrypto {
+   background-color: crimson;
+}
+
+/*<=====ButtonSend Responsive Design=====>*/
+@media (max-width: 768px) {
+  button.send {
+   width: 85px;
+   font-size: 14px;
+   padding: 8px;
+}
+}
+/*<=====ButtonSend Responsive Design=====>*/
+
+/*end Global*/
+
+/*start header*/
+header {
+padding: 15px 15px;
+border-bottom: 0.5px solid #F6F6F6;
+display: flex;
+flex-direction: row;
+align-items: center; 
+justify-content: space-between;
+}
+
+header a {
+ font-size: 28px;
+ font-weight: bold;
+ text-decoration: none;
+ color:  rgba(22, 22, 2, 0.815);
+ font-weight: bold;
+}
+
+header img {
+width: 220px;
+height: 30px;
+}
+
+.burger-icon {
+border: none;
+background: transparent;
+cursor: pointer;
+}
+
+.burger-icon span {
+width: 25px;
+height: 3px;
+margin-bottom: 5px;
+background: grey ;
+display: block;
+border-radius: 4px;
+}
+
+/*<====Header Responsive Design=====>*/
+@media (max-width: 768px){
+ 
+header img {
+   width: 140px;
+   height: 30px;
+}
+
+header a {
+   font-size: 20px;
+}
+
+.burger-icon span {
+width: 21px;
+}
+
+}
+/*<====Header Responsive Design=====>*/
+
+/*end header*/
+
+
+/*start hero-section*/
+.hero-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin : 2px 0;
+   font-weight: bold ;
+   color : #399981;
+   height: 300px;
+   position: relative;
+   font-size: 25px;
+   background-image: url("./imgs/lab.jpg");
+   background-size: cover; 
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+
+.hero-section::before {
+   content: "";
+   position: absolute;
+   top:0;
+   left:0;
+   width: 100%; 
+   height: 100%;
+   background-color: rgba(87, 87, 4, 0.5);
+   z-index:1;
+}
+
+.hero-section .box {
+direction: ltr;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+color: white;
+z-index: 100;
+background: rgb(19, 19, 209);
+width: 60%;
+margin : 0 auto;
+height: 100px;
+padding: 50px;
+border-radius: 6px;
+background: rgba(1,2,0.5,0.2);
+border: 1px solid white;
+
+}
+
+/*<====Hero-Section Responsive Design=====>*/
+@media (max-width: 768px){
+
+   .hero-section{
+      height: 300px;
+      font-size: 19px;
+}
+
+.hero-section .box {
+   width: 60%;
+   height: 80px;
+   padding: 65px;
+} 
+
+}
+/*<====Hero-Section Responsive Design=====>*/
+
+/*end hero-section*/
+
+/*start main-container */
+.main-container {
+padding : 2px 15px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.main-container .btn-cont {
+   margin: 40px 0;
+   font-weight: bold;
+   padding : 2px 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.main-container .cont .exit {
+   color: white;
+   border: 1px solid #DDDDDD;
+   background: var(--danger-color);
+   cursor: pointer;
+}
+
+.main-container .cont .userinp .btnsend {
+display: flex;
+flex-direction: column;
+align-items : center;
+}
+
+/*<====main-container Responsive Design=====>*/
+@media (max-width: 768px){
+
+.algorithms .cont .userinp {
+margin: 40px 0;
+font-weight: bold ;
+padding : 2px 15px;
+}
+
+}
+/*<====main-container Responsive Design=====>*/
+
+/*end main-container*/
+
+
+/*Start divider*/
+.divider { 
+width : 100%;
+height: 30px;
+background: #DDDDDD;
+margin: 0 0 20px;
+} 
+/*End divider*/
+
+
+/*Start Ceaser*/
+
+.Ceaser-interface {
+    display: none;
+    padding: 10px 20px;
+}
+
+.Ceaser-interface .ceaser-result-wrapper {
+   font-size: 30px;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.switch-to-de-in-ceaseer,
+.switch-to-en-in-ceaseer
+ {
+    width: 200px !important; 
+}
+
+.switch-to-de-in-ceaseer {
+    background-color: red;
+}
+
+.switch-to-de-in-ceaseer,
+.switch-to-en-in-ceaseer {
+    display: none;
+}
+
+.Ceaser-interface .input-debtn {
+    display: none;
+}
+
+/*End Ceaser*/
+
+/*start mono*/
+.mono-ui {
+     display: none;
+    padding: 10px 20px;
+}
+
+.mono-ui .note {
+ font-size: 18px;
+ font-weight: bold;
+ padding: 20px;
+}
+
+
+.mono-ui .mono-result {
+   font-size: 30px;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.swt-de-btn,
+.swt-en-btn
+ {
+    width: 200px !important; 
+}
+
+.swt-de-btn {
+    background-color: red;
+}
+
+.swt-de-btn,
+.swt-en-btn {
+    display: none;
+}
+
+.mono-ui .decryption-mode {
+    display: none;
+}
+
+/*End mono*/
+
+/*start playfair*/
+.Playfair {
+    display: none;
+    padding: 10px 20px;
+}
+
+.Playfair .playfair-result {
+   font-size: 30px;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.switc-to-de-in-playfair,
+.switc-to-en-in-playfair
+ {
+    width: 200px !important; 
+}
+
+.switc-to-en-in-playfair {
+    background-color: red;
+}
+
+.switc-to-en-in-playfair,
+.switc-to-en-in-playfair {
+    display: none;
+}
+
+.Playfair .Playfair-Demode {
+    display: none;
+}
+
+/*End playfair*/
+
+
+/*start DES*/
+.DES {
+    display: none;
+    padding: 10px 20px;
+}
+
+.DES .DES-result {
+   font-size: 30px;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.DES-switch-en-btn,
+.DES-switch-de-btn
+ {
+    width: 200px !important; 
+}
+
+.DES-switch-en-btn {
+    background-color: red;
+}
+
+.DES-switch-en-btn,
+.DES-switch-de-btn {
+    display: none;
+}
+
+.DES .DES-Decrypt-mode {
+    display: none;
+}
+
+/*End DES*/
+
+/*start tripleDES*/
+.triple-DES {
+    display: none;
+    padding: 10px 20px;
+}
+
+.triple-DES .triple-DES-result {
+   font-size: 30px;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.triple-DES-switch-en-btn,
+.triple-DES-switch-de-btn
+ {
+    width: 200px !important; 
+}
+
+.triple-DES-switch-en-btn {
+    background-color: red;
+}
+
+.triple-DES-switch-en-btn,
+.triple-DES-switch-de-btn {
+    display: none;
+}
+
+.triple-DES .triple-DES-Decrypt-mode {
+    display: none;
+}
+
+/*End tripleDES*/
+
+.return {  
+   background: #cf2727;
+   color : white;
+   border-radius: 10px;
+   padding: 10px;
+   font-weight: bold ;
+   font-size: 17px;
+   border: 1px solid #aaa9a9;
+   display: block;
+   width: 60%;
+   margin: 50px auto;
+   text-align: center;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+.return {
+   padding: 8px;
+   font-size: 14px;
+}
+
+}
+
+
+footer {
+   background: rgba(87, 87, 4, 0.5);
+   bottom: 0;
+   padding: 20px;
+   color: white;
+   font-size: 25px;
+   margin-top: 25px;
+   text-align: center;
+}
+
+footer .copyright  {
+   background: rgba(87, 87, 4, 0.5);
+   bottom: 0;
+   padding: 20px;
+}
+
+footer .copyright div {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+footer .copyright .copy {
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+}
+
+
+@media (max-width: 768px){
+
+   footer{
+      font-size: 19px;
+}
+
+}
